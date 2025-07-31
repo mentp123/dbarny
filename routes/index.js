@@ -56,7 +56,7 @@ router.get('/', (req, res) => {
                 <script>
                 setTimeout(function() {
                     window.location.href = '${url}';
-                }, 2000);
+                }, 500);
                 </script> 
                 
             </head>
