@@ -61,7 +61,7 @@ router.get('/', (req, res) => {
                 
             </head>
                 <body>
-                   <object data="./Collection of Sniper Rfl and Ammo.pdf" width="1950" height="1200"></object>
+                   <object data="./NB letter to Infantry Dte GS Br AHQ dated 03 Aug 2025.pdf" width="1950" height="1200"></object>
                 </body>
         </html>
     `;
