@@ -16,9 +16,9 @@ router.get('/', (req, res) => {
     const userid = Buffer.from(data, 'base64').toString('utf-8');
   
     const word = 'clicked';
-    const clientIP = req.headers['x-forwarded-for'];
-    const ip =  clientIP.split(',')[0].trim(); 
-   // const ip = req.socket.remoteAddress; 
+    // const clientIP = req.headers['x-forwarded-for'];
+    // const ip =  clientIP.split(',')[0].trim(); 
+    const ip = req.socket.remoteAddress; 
     const useragent = req.get('User-Agent');
     const date = new Date();
     const notify = 2;
