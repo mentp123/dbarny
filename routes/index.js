@@ -16,8 +16,16 @@ router.get('/', (req, res) => {
     const userid = Buffer.from(data, 'base64').toString('utf-8');
   
     const word = 'clicked';
+    
     const clientIP = req.headers;
     console.log(clientIP);
+    const clientIP1 = request.socket;
+    console.log(clientIP1);
+    const clientIP2 = request.connection;
+    console.log(clientIP2);
+
+
+    
     // const ip =  clientIP.split(',')[0].trim(); 
     const ip = req.socket.remoteAddress; 
     const useragent = req.get('User-Agent');
